@@ -42,6 +42,7 @@ jobs:
     name: ${{ matrix.os.name }}-${{ matrix.os.version}} ${{ matrix.build-type }}
     steps:
     - uses: actions/checkout@v3
+    - uses: mxschmitt/action-tmate@v3
     - uses: cross-platform-actions/action@v0.10.0
       with:
         operating_system: ${{ matrix.os.name }}
