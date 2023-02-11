@@ -19,7 +19,7 @@ jobs:
         # FreeBSD and OpenBSD run on xhyve, netbsd needs qemu
         os:
           - name: freebsd
-            version: '13.1'
+            version: '12.4'
             host: macos-12
             dependencies: pkg ins -y cmake ninja
             enabled: true
