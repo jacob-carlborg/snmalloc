@@ -20,7 +20,7 @@ jobs:
         os:
           - name: freebsd
             version: '12.4'
-            host: macos-12
+            host: macos-latest
             dependencies: pkg ins -y cmake ninja
             enabled: true
           # Tests are failing on OpenBSD, so disable for now.
